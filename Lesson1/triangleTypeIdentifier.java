@@ -85,4 +85,9 @@ public class triangleTypeIdentifier {
             System.out.println("An error occurred: " + e.getMessage());
         }
     }
+
+    public static void main(String[] args) {
+        triangleTypeIdentifier identifier = new triangleTypeIdentifier();
+        identifier.run();
+    }
 }
