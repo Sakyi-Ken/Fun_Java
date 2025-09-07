@@ -1,13 +1,17 @@
 
 import java.util.Scanner;
 
-public class gradeCalculator {
+public class GradeCalculator {
 
     public void run() {
         try (Scanner scanner = new Scanner(System.in)) {
 
             System.out.print("Enter a numerical grade (0 - 100): ");
             int grade = scanner.nextInt();
+            if (grade < 0 || grade > 100) {
+                System.out.println("Grade must be between 0 and 100.");
+                return;
+            }
 
             String letterGrade;
 
@@ -30,8 +34,8 @@ public class gradeCalculator {
         }
     }
 
-    public static void main(String[] args) {
+    /*  public static void main(String[] args) {
         gradeCalculator calculator = new gradeCalculator();
         calculator.run();
-    }
+    }*/
 }
