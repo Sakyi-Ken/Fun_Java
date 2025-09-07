@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class ticketPriceCalculator {
+public class TicketPriceCalculator {
 
     public void run() {
         try (Scanner scanner = new Scanner(System.in)) {
@@ -45,9 +45,9 @@ public class ticketPriceCalculator {
             System.out.println("An error occurred: " + e.getMessage());
         }
     }
-
+    /*
     public static void main(String[] args) {
         ticketPriceCalculator calculator = new ticketPriceCalculator();
         calculator.run();
-    }
+    }*/
 }

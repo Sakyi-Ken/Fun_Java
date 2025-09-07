@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class triangleTypeIdentifier {
+public class TriangleTypeIdentifier {
 
     public void run() {
         try (Scanner scanner = new Scanner(System.in)) {
@@ -86,8 +86,8 @@ public class triangleTypeIdentifier {
         }
     }
 
-    public static void main(String[] args) {
-        triangleTypeIdentifier identifier = new triangleTypeIdentifier();
-        identifier.run();
-    }
+    // public static void main(String[] args) {
+    //     triangleTypeIdentifier identifier = new triangleTypeIdentifier();
+    //     identifier.run();
+    // }
 }
