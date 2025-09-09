@@ -3,15 +3,15 @@ import java.util.Scanner;
 
 public class TicketPriceCalculator {
 
-    public void run() {
-        try (Scanner scanner = new Scanner(System.in)) {
+    public void run(Scanner scanner) {
+        try {
             boolean continueProgram = true;
 
             while (continueProgram) {
                 int age = -1;
 
                 while (true) {
-                    System.out.print("Enter you age: ");
+                    System.out.print("Enter your age: ");
                     if (scanner.hasNextInt()) {
                         age = scanner.nextInt();
                         if (age >= 0 && age <= 120) {
@@ -39,15 +39,16 @@ public class TicketPriceCalculator {
                     continueProgram = false;
                 }
             }
+
             System.out.println("Program ended.");
-            scanner.close();
+
         } catch (Exception e) {
             System.out.println("An error occurred: " + e.getMessage());
         }
     }
     /*
     public static void main(String[] args) {
-        ticketPriceCalculator calculator = new ticketPriceCalculator();
+        TicketPriceCalculator calculator = new TicketPriceCalculator();
         calculator.run();
     }*/
 }
