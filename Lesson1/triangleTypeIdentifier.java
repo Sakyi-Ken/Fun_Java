@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class TriangleTypeIdentifier {
 
-    public void run() {
-        try (Scanner scanner = new Scanner(System.in)) {
+    public void run(Scanner scanner) {
+        try {
             boolean continueProgram = true;
 
             while (continueProgram) {
@@ -80,7 +80,6 @@ public class TriangleTypeIdentifier {
 
             }
             System.out.println("Program ended");
-            scanner.close();
         } catch (Exception e) {
             System.out.println("An error occurred: " + e.getMessage());
         }
