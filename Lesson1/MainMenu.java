@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class MainMenu {
@@ -20,15 +19,15 @@ public class MainMenu {
                     switch (choice) {
                         case 1 -> {
                             GradeCalculator gradeCalc = new GradeCalculator();
-                            gradeCalc.run();
+                            gradeCalc.run(scanner);
                         }
                         case 2 -> {
                             TicketPriceCalculator ticketCalc = new TicketPriceCalculator();
-                            ticketCalc.run();
+                            ticketCalc.run(scanner);
                         }
                         case 3 -> {
                             TriangleTypeIdentifier triangleIdentifier = new TriangleTypeIdentifier();
-                            triangleIdentifier.run();
+                            triangleIdentifier.run(scanner);
                         }
                         case 4 -> {
                             continueProgram = false;
